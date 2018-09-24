@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript">
+		
+		function somar(a,b){
+			a = parseInt(a);
+			b = parseInt(b);
+
+			if (isNaN(a) || isNaN(b)) {
+				return undefined;
+			}
+
+			return a + b;	
+		}	
+
+		function subtrair(a,b){
+			a = parseInt(a);
+			b = parseInt(b);
+
+			if (isNaN(a) || isNaN(b) ) {
+				return undefined;
+			}
+
+			return a - b;
+		}
+		
+		function dividir(a,b){
+			a = parseInt(a);
+			b = parseInt(b);
+
+			if (isNaN(a) || isNaN(b)|| a < 0 || b <= 0 || a % b != 0) {
+				return undefined;
+			}	
+
+			return a / b;
+		}
+		
+		function multiplicar(a,b){
+			a = parseInt(a);
+			b = parseInt(b);
+
+			if (isNaN(a) || isNaN(b) || a < 0 || b < 0 || b > a) {
+				return undefined;
+			}
+
+			return a * b;
+		}
+
+			alert("A soma é " + somar(1, "dois"));
+			alert(" A subtração é " + subtrair(5, 2))
+			alert("A divisão é " + dividir(6,0))
+			alert(" A multiplicação é " + multiplicar(3,3))
+	
+	</script>
+</head>
+<body>
+
+</body>
+</html>
